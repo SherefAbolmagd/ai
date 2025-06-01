@@ -1,8 +1,9 @@
 <!-- markdownlint-disable MD030 -->
 
-<img width="100%" src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise.png?raw=true"></a>
-
-# Flowise - Build LLM Apps Easily
+<p align="center">
+<img src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_white.svg#gh-light-mode-only">
+<img src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_dark.svg#gh-dark-mode-only">
+</p>
 
 [![Release Notes](https://img.shields.io/github/release/FlowiseAI/Flowise)](https://github.com/FlowiseAI/Flowise/releases)
 [![Discord](https://img.shields.io/discord/1087698854775881778?label=Discord&logo=discord)](https://discord.gg/jbaHfsRVBW)
@@ -12,9 +13,9 @@
 
 English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)
 
-<h3>Drag & drop UI to build your customized LLM flow</h3>
+<h3>Build AI Agents, Visually</h3>
 <a href="https://github.com/FlowiseAI/Flowise">
-<img width="100%" src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise.gif?raw=true"></a>
+<img width="100%" src="https://github.com/FlowiseAI/Flowise/blob/main/images/flowise_agentflow.gif?raw=true"></a>
 
 ## ⚡Quick Start
 
@@ -28,12 +29,6 @@ Download and Install [NodeJS](https://nodejs.org/en/download) >= 18.15.0
 
     ```bash
     npx flowise start
-    ```
-
-    With username & password
-
-    ```bash
-    npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234
     ```
 
 3. Open [http://localhost:3000](http://localhost:3000)
@@ -137,15 +132,6 @@ Flowise has 3 different modules in a single mono repository.
 
     Any code changes will reload the app automatically on [http://localhost:8080](http://localhost:8080)
 
-## 🔒 Authentication
-
-To enable app level authentication, add `FLOWISE_USERNAME` and `FLOWISE_PASSWORD` to the `.env` file in `packages/server`:
-
-```
-FLOWISE_USERNAME=user
-FLOWISE_PASSWORD=1234
-```
-
 ## 🌱 Env Variables
 
 Flowise support different environment variables to configure your instance. You can specify the following variables in the `.env` file inside `packages/server` folder. Read [more](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md#-env-variables)
@@ -182,9 +168,9 @@ Deploy Flowise self-hosted in your existing infrastructure, we support various [
 
         [![Deploy on Elestio](https://elest.io/images/logos/deploy-to-elestio-btn.png)](https://elest.io/open-source/flowiseai)
 
-    -   [Sealos](https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dflowise)
+    -   [Sealos](https://template.sealos.io/deploy?templateName=flowise)
 
-        [![](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dflowise)
+        [![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://template.sealos.io/deploy?templateName=flowise)
 
     -   [RepoCloud](https://repocloud.io/details/?app_id=29)
 
