@@ -1,0 +1,16 @@
+# service.yaml
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "easyfastai-service"
+  namespace: "default"
+  labels:
+    app: "easyfastai"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 3000
+  selector:
+    app: "easyfastai"
+  type: "LoadBalancer"

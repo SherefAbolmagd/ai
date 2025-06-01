@@ -1,0 +1,28 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: easyfastai
+  labels:
+    app: easyfastai
+spec:
+  selector:
+    matchLabels:
+      app: easyfastai
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: easyfastai
+    spec:
+      containers:
+      - name: easyfastai
+        image: gcr.io/dev-servers-456113/easyfastai:dev
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "512Mi"
+          limits:
+            cpu: "500m"
+            memory: "1Gi"
